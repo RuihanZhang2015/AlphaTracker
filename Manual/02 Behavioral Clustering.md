@@ -76,7 +76,7 @@ Run the following command in the current folder
 ```
 <br>
 
-### step 3. Clustering
+### Step 3. Clustering
 
 Run the following command in the current folder
 

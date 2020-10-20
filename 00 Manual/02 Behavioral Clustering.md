@@ -82,13 +82,29 @@ Change the following settings in ```./utils_file/setting.py```. Changes for indi
         ]
 ```
 
-  - self.distance_threshold = 10000 # any very large number will do
+- Change the threshold for distance between two mice to a very large number
 
-  - self.gen_video_folder = # where the generated videos will be saved
+```
+self.distance_threshold = 10000 # 
+```
 
-  - self.result_folder = # where the metadata will be saved
+- Specify the directory to save the generated videos
 
-  - self.video_name_suffix = # suffix for generated videos
+```
+self.gen_video_folder = # where the generated videos will be saved
+```
+
+- Specify the directory to save the metadata which will be used for inspecting the clustering results
+
+```
+self.result_folder = # where the metadata will be saved
+```
+
+- Specify the suffix for generated videos
+
+```
+self.video_name_suffix = # suffix for generated videos
+```
 
 
 #### Configurations for social behavior
@@ -148,20 +164,38 @@ Change the following settings in ```./utils_file/setting.py```. Changes for indi
         ]
   ```
 
-- self.distance_threshold = 1.8
+- Change the threshold for distance between two mice to include only mice that are within 1.8 body length
 
-- self.gen_video_folder = # where the generated videos will be saved
+```
+self.distance_threshold = 1.8
+```
 
-- self.result_folder = # where the metadata will be saved
 
-- self.video_name_suffix = # suffix for generated videos
+- Specify the directory to save the generated videos
 
+```
+self.gen_video_folder = # where the generated videos will be saved
+```
+
+- Specify the directory to save the metadata which will be used for inspecting the clustering results
+
+```
+self.result_folder = # where the metadata will be saved
+```
+
+- Specify the suffix for generated videos
+
+```
+self.video_name_suffix = # suffix for generated videos
+```
+ 
  <br>
 
 
 ### step 2. Preprocess Data
 
 Run the following command in the current folder
+
 ```bash
 cd utils_file
 bash run_all.sh
@@ -204,7 +238,7 @@ There are two steps to add feature for clustering:
 
 2. define the weight and normalization of the new feature in ./utils_file/setting.py :
 ```python
-	         self.cluster_arg = [
+	self.cluster_arg = [
            {
             'thred':30,
             'name':'all_twoMice',

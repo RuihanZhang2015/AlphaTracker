@@ -1,6 +1,6 @@
 # 01 tracking
 
-## Preparation
+## Installation
 
 ### Install conda
 

@@ -22,13 +22,11 @@ See the installation for the tracking part.
 
 ### Step 1. Configuration
 
-Change setting in ./utils_file/setting.py.  The meaning of the parameters can be found in the ./utils_file/setting.py.
+Change the following settings in ```./utils_file/setting.py```
 
-#### Prepare settings for individual behavior
+#### Configuration for individual behavior
 
-Modify the following parameters in ```Behavioral Clustering/util_files```
-
-- Individual behavioral features
+- Adjust the weights for Individual behavioral features
 
 ```
         # cluster_arg: parameter of features and threshold for clustering
@@ -93,11 +91,9 @@ Modify the following parameters in ```Behavioral Clustering/util_files```
   - self.video_name_suffix = # suffix for generated videos
 
 
-#### Prepare the settings for social behavior
+#### Configurations for social behavior
 
-Modify the following parameters in ```Behavioral Clustering/util_files```
-
-- Social behavioral features
+- Adjust the weights for Social behavioral features
 
   ```
   self.cluster_arg = [
@@ -182,15 +178,15 @@ python fft_main_sep_twoMiceInteract.py
 <br>
 
 
-### Add new features (optional)
+## Add new features (optional)
 
 There are two steps to add feature for clustering:
 
-###  step 1. Add Code for the Feature
+###  Step 1. Add Code for the Feature
 
-  1. define the new feature ./fft_utils.py as the following template (you can find this template in ./fft_utils.py ；
+1. Define the new feature ./fft_utils.py as the following template (you can find this template in ./fft_utils.py ；
 
-    ```
+```
         ## you can process data to get the feature
         ## the pose data are in five variables: pose_clips, pose_clips_align, poseTheOther_clips, poseTheOther_clips_alignSelf, poseTheOther_clips_alignToOther
         ## each of the variables is a numpy array whose shape is (number_of_clip, number_of_frames_in_one_clip, number_of_key_point, 3)
@@ -204,10 +200,10 @@ There are two steps to add feature for clustering:
             feature_clips_dict['newFeatureName'].append(newFeature)
         else:
             feature_clips_dict['newFeatureName'] = [newFeature]
-            ```
+```
 
-        2. define the weight and normalization of the new feature in ./utils_file/setting.py :
-          ```python
+2. define the weight and normalization of the new feature in ./utils_file/setting.py :
+```python
 	         self.cluster_arg = [
            {
             'thred':30,
@@ -224,7 +220,7 @@ There are two steps to add feature for clustering:
              ],
              },
         ]
-        ```
+```
 <br>
 
 ### step 2. Clustering

@@ -1,6 +1,6 @@
 # Behavioral Clustering
 
-## algorithm
+## Algorithm
 
 The main process of hierarchical clustering list below can be found in ./fft_main_sep_twoMiceInteract.py:
 1. Get data from tracking result with function *retrieve_poses_Mice*
@@ -12,7 +12,7 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 
 ### How to run?
 
-- step 1. Configure
+- Step 1. Configure
 
   change setting in ./utils_file/setting.py.  The meaning of the parameters can be found in the ./utils_file/setting.py.
 
@@ -23,7 +23,61 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
   - Individual behavioral features
 
   ```
+        # cluster_arg: parameter of features and threshold for clustering
+        self.cluster_arg = [
+        {
+            ## thred: is the threshold of distance of cluster. the higher the thred is the more the clusters are
+            ## (still on test) if the thred is a list, the algorithm will evaluate all the thred with gt and chose the thred with highest score
+            'thred':30,
+            # 'thred':[i for i in range(30,500,20)],
+	    ## name: for display
+            'name':'all_twoMice',
+            'evaluation_metric':'Adjusted Rand index',
+            'features_arg':[\
+             # {'feat_key':'newFeatureName','weight':4,'norm':'zscore_all'},
+             {'feat_key':'left_ear','weight':1,'norm':'zscore_all'},
+             {'feat_key':'right_ear','weight':1,'norm':'zscore_all'},
+             {'feat_key':'left_ear_phi','weight':1,'norm':'zscore_all'},
+             {'feat_key':'right_ear_phi','weight':1,'norm':'zscore_all'},
+             {'feat_key':'body_length','weight':1,'norm':'zscore_all'},
+             {'feat_key':'head_length','weight':1,'norm':'zscore_all'},
+             {'feat_key':'head_body_angles','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_rho','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_c','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_s','weight':1,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_amp','weight':1,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_ang','weight':1,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_amp','weight':1,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_ang','weight':1,'norm':'zscore_all'},
+             {'feat_key':'body_change_ang','weight':1,'norm':'zscore_all'},
 
+             {'feat_key':'left_ear_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'right_ear_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'left_ear_phi_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'right_ear_phi_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'body_length_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'head_length_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'head_body_angles_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'displace_rho_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_c_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_s_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_amp_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_ang_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_amp_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_ang_TO','weight':0,'norm':'zscore_all'},
+             {'feat_key':'body_change_ang_TO','weight':0,'norm':'zscore_all'},
+
+             {'feat_key':'TM_nose_RM_tail_displace_phi','weight':0,'norm':'zscore_all'},
+             {'feat_key':'TM_nose_RM_tail_displace_rho','weight':0,'norm':'zscore_all'},
+             {'feat_key':'RM_nose_TM_tail_displace_phi','weight':0,'norm':'zscore_all'},
+             {'feat_key':'RM_nose_TM_tail_displace_rho','weight':0,'norm':'zscore_all'},
+             {'feat_key':'nose_nose_displace_rho','weight':0,'norm':'zscore_all'},
+             {'feat_key':'nose_nose_displace_phi','weight':0,'norm':'zscore_all'},
+             {'feat_key':'two_body_ang','weight':0,'norm':'zscore_all'},
+             {'feat_key':'two_head_ang','weight':0,'norm':'zscore_all'},
+             ],
+          },
+        ]
   ```
 
   - self.distance_threshold = 10000 # any very large number will do
@@ -42,6 +96,60 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
   - Social behavioral features
 
   ```
+  self.cluster_arg = [
+        {
+            ## thred: is the threshold of distance of cluster. the higher the thred is the more the clusters are
+            ## (still on test) if the thred is a list, the algorithm will evaluate all the thred with gt and chose the thred with highest score
+            'thred':30,
+            # 'thred':[i for i in range(30,500,20)],
+            ## name: for display
+            'name':'all_twoMice',
+            'evaluation_metric':'Adjusted Rand index',
+            'features_arg':[\
+             # {'feat_key':'newFeatureName','weight':4,'norm':'zscore_all'},
+             {'feat_key':'left_ear','weight':1,'norm':'zscore_all'},
+             {'feat_key':'right_ear','weight':1,'norm':'zscore_all'},
+             {'feat_key':'left_ear_phi','weight':1,'norm':'zscore_all'},
+             {'feat_key':'right_ear_phi','weight':1,'norm':'zscore_all'},
+             {'feat_key':'body_length','weight':1,'norm':'zscore_all'},
+             {'feat_key':'head_length','weight':1,'norm':'zscore_all'},
+             {'feat_key':'head_body_angles','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_rho','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_c','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_s','weight':1,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_amp','weight':1,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_ang','weight':1,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_amp','weight':1,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_ang','weight':1,'norm':'zscore_all'},
+             {'feat_key':'body_change_ang','weight':1,'norm':'zscore_all'},
+
+             {'feat_key':'left_ear_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'right_ear_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'left_ear_phi_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'right_ear_phi_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'body_length_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'head_length_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'head_body_angles_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_rho_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_c_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'displace_phi_s_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_amp_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'nose_fft_ang_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_amp_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'contourPCA_fft_ang_TO','weight':1,'norm':'zscore_all'},
+             {'feat_key':'body_change_ang_TO','weight':1,'norm':'zscore_all'},
+
+             {'feat_key':'TM_nose_RM_tail_displace_phi','weight':4,'norm':'zscore_all'},
+             {'feat_key':'TM_nose_RM_tail_displace_rho','weight':4,'norm':'zscore_all'},
+             {'feat_key':'RM_nose_TM_tail_displace_phi','weight':4,'norm':'zscore_all'},
+             {'feat_key':'RM_nose_TM_tail_displace_rho','weight':4,'norm':'zscore_all'},
+             {'feat_key':'nose_nose_displace_rho','weight':4,'norm':'zscore_all'},
+             {'feat_key':'nose_nose_displace_phi','weight':4,'norm':'zscore_all'},
+             {'feat_key':'two_body_ang','weight':4,'norm':'zscore_all'},
+             {'feat_key':'two_head_ang','weight':4,'norm':'zscore_all'},
+             ],
+          },
+        ]
   ```
 
   - self.distance_threshold = 1.8

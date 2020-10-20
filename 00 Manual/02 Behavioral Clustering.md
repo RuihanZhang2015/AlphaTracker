@@ -26,12 +26,8 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
         # cluster_arg: parameter of features and threshold for clustering
         self.cluster_arg = [
         {
-            ## thred: is the threshold of distance of cluster. the higher the thred is the more the clusters are
-            ## (still on test) if the thred is a list, the algorithm will evaluate all the thred with gt and chose the thred with highest score
-            'thred':30,
-            # 'thred':[i for i in range(30,500,20)],
-	    ## name: for display
-            'name':'all_twoMice',
+            'thred':30, # threshold for defining cluster in the dendrogram
+            'name':'all_twoMice', ## name: for display
             'evaluation_metric':'Adjusted Rand index',
             'features_arg':[\
              # {'feat_key':'newFeatureName','weight':4,'norm':'zscore_all'},
@@ -98,12 +94,8 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
   ```
   self.cluster_arg = [
         {
-            ## thred: is the threshold of distance of cluster. the higher the thred is the more the clusters are
-            ## (still on test) if the thred is a list, the algorithm will evaluate all the thred with gt and chose the thred with highest score
-            'thred':30,
-            # 'thred':[i for i in range(30,500,20)],
-            ## name: for display
-            'name':'all_twoMice',
+            'thred':30, # threshold for defining cluster in the dendrogram
+            'name':'all_twoMice',## name: for display
             'evaluation_metric':'Adjusted Rand index',
             'features_arg':[\
              # {'feat_key':'newFeatureName','weight':4,'norm':'zscore_all'},

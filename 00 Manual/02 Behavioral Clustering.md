@@ -9,6 +9,7 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 4. Get feature from the data with funcion *compute_features_sep_twoMice_Independent*
 5. Conduct hierarchical clustering with function *cluster*
 6. Visualize and save the result  
+7. Generate input files for clustering UI
 
 <br>
 

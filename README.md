@@ -10,6 +10,6 @@
 
 [Multi-animal Pose Estimation and Tracking](Manual/01 Tracking.md)
 
-[Unsupervised Behavioral Clustering](Manual/02 Behavioral Clustering.md)
+[Unsupervised Behavioral Clustering](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/Manual/02%20Behavioral%20Clustering.md)
 
 [Tracking UI and Clustering UI](Manual/03 UI.md)

@@ -1,4 +1,4 @@
-# 01 tracking
+# 01 Tracking
 
 ## Preparation
 
@@ -58,7 +58,7 @@ has two mice and each mouse has two keypoint annotated.
 example, all the first points represent the nose, all the second points represent the tail and etc.
 If the keypoint is not visible in one frame, then make the x,y of the keypoint to be -1.
 
-### Step 2. Configure
+### Step 2. Configuration
 
 Before training, you need to charge the parameters in ./setting.py (red block in Figure 2). The meaning of the parameters can be found in the ./setting.py.
 <div align="center">
@@ -66,7 +66,7 @@ Before training, you need to charge the parameters in ./setting.py (red block in
     Figure 2. Parameters
 </div>
 
-### Step 3. Run the Code
+### Step 3. Running the code
 
 Change directory to the alphatracker folder (where this README is in) and use the following command line to train the model:
 ```bash

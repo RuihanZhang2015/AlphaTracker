@@ -2,12 +2,12 @@
 
 ### Algorithm overview
 
-The main process of hierarchical clustering list below can be found in ./fft_main_sep_twoMiceInteract.py:
-1. Get data from tracking result with function *retrieve_poses_Mice*
-2. Clean the data with functions *clean_differentLength_clips*, *remove_longMiceDist_clips*, *left_right*, *correctLimbs*
-3. Preprocess the data with function *align_poses_self*
-4. Get feature from the data with funcion *compute_features_sep_twoMice_Independent*
-5. Conduct hierarchical clustering with function *cluster*
+The main process of hierarchical clustering list below can be found in 	`./fft_main_sep_twoMiceInteract.py`
+1. Get data from tracking result with function `retrieve_poses_Mice`
+2. Clean the data with functions `clean_differentLength_clips`, `remove_longMiceDist_clips`, `left_right`, `correctLimbs`
+3. Preprocess the data with function `align_poses_self`
+4. Get feature from the data with funcion `compute_features_sep_twoMice_Independent`
+5. Conduct hierarchical clustering with function `cluster`
 6. Visualize and save the result  
 7. Generate input files for clustering UI
 

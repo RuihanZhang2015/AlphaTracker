@@ -6,7 +6,7 @@
     Architecture and Pipeline of AlphaTracker
 </div>
 
-## instructions
+## Instructions
 
 [Multi-animal Pose Estimation and Tracking](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/Manual/01%20Tracking.md)
 

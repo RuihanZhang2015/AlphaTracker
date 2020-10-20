@@ -11,13 +11,13 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 5. Conduct hierarchical clustering with function *cluster*
 6. Visualize and save the result  
 
-### Installation
+## Installation
 
 See the instuction for installation for Tracking part.
 
-### How to run?
+## Run clustering algorithm
 
-- step 1. Configure
+### step 1. Configure
 
   change setting in ./utils_file/setting.py.  The meaning of the parameters can be found in the ./utils_file/setting.py.
 
@@ -60,7 +60,7 @@ See the instuction for installation for Tracking part.
   <br>
 
 
-- step 2. Preprocess Data
+### step 2. Preprocess Data
 
   Run the following command in the current folder
   ```bash
@@ -68,7 +68,7 @@ See the instuction for installation for Tracking part.
 	  bash run_all.sh
     ```
 
-- step 3. Clustering
+### step 3. Clustering
 
   Run the following command in the current folder
   ```bash
@@ -76,11 +76,11 @@ See the instuction for installation for Tracking part.
   ```
 
 
-### How to Add Feature?
+## Add new features
 
 There are two steps to add feature for clustering:
 
--  step 1. Add Code for the Feature
+###  step 1. Add Code for the Feature
 
   1. define the new feature ./fft_utils.py as the following template (you can find this template in ./fft_utils.py ；
 
@@ -120,7 +120,7 @@ There are two steps to add feature for clustering:
         ]
         ```
 
-- step 2. Clustering
+### step 2. Clustering
 
   Run the following command in the current folder
   ```bash

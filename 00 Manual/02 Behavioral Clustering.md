@@ -1,6 +1,6 @@
 # Behavioral Clustering
 
-## Algorithm
+### Algorithm overview
 
 The main process of hierarchical clustering list below can be found in ./fft_main_sep_twoMiceInteract.py:
 1. Get data from tracking result with function *retrieve_poses_Mice*
@@ -10,19 +10,27 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 5. Conduct hierarchical clustering with function *cluster*
 6. Visualize and save the result  
 
-### How to run?
+<br>
 
-- Step 1. Configure
+## Installation
 
-  change setting in ./utils_file/setting.py.  The meaning of the parameters can be found in the ./utils_file/setting.py.
+See the installation for the tracking part.
 
-  #### Prepare settings for individual behavior
+<br>
 
-  Modify the following parameters in ```Behavioral Clustering/util_files```
+## Run clustering algorithm
 
-  - Individual behavioral features
+### Step 1. Configuration
 
-  ```
+Change setting in ./utils_file/setting.py.  The meaning of the parameters can be found in the ./utils_file/setting.py.
+
+#### Prepare settings for individual behavior
+
+Modify the following parameters in ```Behavioral Clustering/util_files```
+
+- Individual behavioral features
+
+```
         # cluster_arg: parameter of features and threshold for clustering
         self.cluster_arg = [
         {
@@ -74,7 +82,7 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
              ],
           },
         ]
-  ```
+```
 
   - self.distance_threshold = 10000 # any very large number will do
 
@@ -85,11 +93,11 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
   - self.video_name_suffix = # suffix for generated videos
 
 
-  #### Prepare the settings (social behavior)
+#### Prepare the settings (social behavior)
 
-  Modify the following parameters in ```Behavioral Clustering/util_files```
+Modify the following parameters in ```Behavioral Clustering/util_files```
 
-  - Social behavioral features
+- Social behavioral features
 
   ```
   self.cluster_arg = [
@@ -152,23 +160,24 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 
   - self.video_name_suffix = # suffix for generated videos
 
-  <br>
+ <br>
 
 
-- step 2. Preprocess Data
+### step 2. Preprocess Data
 
-  Run the following command in the current folder
-  ```bash
-	 cd utils_file
-	  bash run_all.sh
-    ```
+Run the following command in the current folder
+```bash
+cd utils_file
+bash run_all.sh
+```
 
-- step 3. Clustering
+### step 3. Clustering
 
-  Run the following command in the current folder
-  ```bash
+Run the following command in the current folder
+
+```bash
 	python fft_main_sep_twoMiceInteract.py
-  ```
+```
 
 
 ### How to Add Feature?

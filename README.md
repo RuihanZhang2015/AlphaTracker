@@ -13,3 +13,7 @@
 [Unsupervised Behavioral Clustering](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/02%20Behavioral%20Clustering.md)
 
 [Tracking UI and Clustering UI](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/03%20UI.md)
+
+
+
+## Citation

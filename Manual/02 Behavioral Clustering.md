@@ -15,7 +15,7 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 
 ## Installation
 
-See the instuction for installation for Tracking part.
+See the instuction for installation for [Tracking part](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/Manual/01%20Tracking.md).
 
 <br>
 

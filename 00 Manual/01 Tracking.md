@@ -50,7 +50,7 @@ annotations to train the model. Our code is compatible with data annotated by th
 Figure 1 shows an example of annotation json file. In this example, there only two images. Each image
 has two mice and each mouse has two keypoint annotated.
 <div align="center">
-    <img src="jsonFormatForTraining.png", width="500" alt><br>
+    <img src="media/jsonFormatForTraining.png", width="500" alt><br>
     Figure 1. Example of Annotation Json File
 </div>
 
@@ -62,7 +62,7 @@ If the keypoint is not visible in one frame, then make the x,y of the keypoint t
 
 Before training, you need to charge the parameters in ./setting.py (red block in Figure 2). The meaning of the parameters can be found in the ./setting.py.
 <div align="center">
-    <img src="parameterForTracking.png", width="500" alt><br>
+    <img src="media/parameterForTracking.png", width="500" alt><br>
     Figure 2. Parameters
 </div>
 

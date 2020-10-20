@@ -22,7 +22,7 @@ See the installation for the tracking part.
 
 ### Step 1. Configuration
 
-Change the following settings in ```./utils_file/setting.py```
+Change the following settings in ```./utils_file/setting.py```. Changes for individual behavior and social behavior are explained separately here.
 
 #### Configuration for individual behavior
 

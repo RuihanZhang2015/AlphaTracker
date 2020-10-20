@@ -98,8 +98,8 @@ python track.py
 1. Remember not to include any spaces or parentheses in your file names
 2. For training the parameter num_mouse must include the same number of items as the number of json files
 that have annotated data. For example if you have one json file with annotated data for 3 animals then
-num_mouse=[3] if you have two json files with annoted data for 3 animals then num_mouse=[3,3].
-3. sppe_lr is the learning rate for the SAPE network. If your network is not performing well you can lower this
+```num_mouse=[3]``` if you have two json files with annoted data for 3 animals then ```num_mouse=[3,3]```.
+3. ```sppe_lr``` is the learning rate for the SAPE network. If your network is not performing well you can lower this
 number and try retraining
-4. sppe_epoch is the number of training epochs that the SAPE network does. More epochs will take longer but
+4. ```sppe_epoch``` is the number of training epochs that the SAPE network does. More epochs will take longer but
 can potentially lead to better performance.

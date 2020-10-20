@@ -11,17 +11,22 @@ The main process of hierarchical clustering list below can be found in ./fft_mai
 5. Conduct hierarchical clustering with function *cluster*
 6. Visualize and save the result  
 
+<br>
+
 ## Installation
 
 See the instuction for installation for Tracking part.
 
+<br>
+
+
 ## Run clustering algorithm
 
-### step 1. Configure
+### Step 1. Configure
 
-  change setting in ./utils_file/setting.py.  The meaning of the parameters can be found in the ./utils_file/setting.py.
+Change setting in ./utils_file/setting.py.The definition of the parameters can be found in the ./utils_file/setting.py.
 
-  #### Prepare settings for individual behavior
+#### Prepare settings for individual behavior
 
   Modify the following parameters in ```Behavioral Clustering/util_files```
 
@@ -40,9 +45,9 @@ See the instuction for installation for Tracking part.
   - self.video_name_suffix = # suffix for generated videos
 
 
-  #### Prepare the settings (social behavior)
+#### Prepare the settings (social behavior)
 
-  Modify the following parameters in ```Behavioral Clustering/util_files```
+Modify the following parameters in ```Behavioral Clustering/util_files```
 
   - Social behavioral features
 
@@ -60,21 +65,24 @@ See the instuction for installation for Tracking part.
   <br>
 
 
-### step 2. Preprocess Data
+### Step 2. Preprocess Data
 
-  Run the following command in the current folder
-  ```bash
+Run the following command in the current folder
+
+```bash
 	 cd utils_file
 	  bash run_all.sh
-    ```
+```
 
 ### step 3. Clustering
 
-  Run the following command in the current folder
-  ```bash
-	python fft_main_sep_twoMiceInteract.py
-  ```
+Run the following command in the current folder
 
+```bash
+	python fft_main_sep_twoMiceInteract.py
+```
+
+<br>
 
 ## Add new features
 
@@ -82,9 +90,9 @@ There are two steps to add feature for clustering:
 
 ###  step 1. Add Code for the Feature
 
-  1. define the new feature ./fft_utils.py as the following template (you can find this template in ./fft_utils.py ；
+1. define the new feature ./fft_utils.py as the following template (you can find this template in ./fft_utils.py ；
 
-    ```
+```
         ## you can process data to get the feature
         ## the pose data are in five variables: pose_clips, pose_clips_align, poseTheOther_clips, poseTheOther_clips_alignSelf, poseTheOther_clips_alignToOther
         ## each of the variables is a numpy array whose shape is (number_of_clip, number_of_frames_in_one_clip, number_of_key_point, 3)
@@ -98,10 +106,11 @@ There are two steps to add feature for clustering:
             feature_clips_dict['newFeatureName'].append(newFeature)
         else:
             feature_clips_dict['newFeatureName'] = [newFeature]
-            ```
+```
 
-        2. define the weight and normalization of the new feature in ./utils_file/setting.py :
-          ```python
+2. define the weight and normalization of the new feature in ./utils_file/setting.py :
+
+```python
 	         self.cluster_arg = [
            {
             'thred':30,
@@ -118,14 +127,15 @@ There are two steps to add feature for clustering:
              ],
              },
         ]
-        ```
+```
 
 ### step 2. Clustering
 
-  Run the following command in the current folder
-  ```bash
+Run the following command in the current folder
+  
+```bash
 	 python fft_main_sep_twoMiceInteract.py
-  ```
+```
 
 <br>
 

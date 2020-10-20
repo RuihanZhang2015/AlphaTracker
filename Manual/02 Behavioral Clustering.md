@@ -26,6 +26,7 @@ See the instuction for installation for Tracking part.
 
 Change setting in ./utils_file/setting.py.The definition of the parameters can be found in the ./utils_file/setting.py.
 
+
 #### Prepare settings for individual behavior
 
   Modify the following parameters in ```Behavioral Clustering/util_files```
@@ -73,6 +74,7 @@ Run the following command in the current folder
 	 cd utils_file
 	  bash run_all.sh
 ```
+<br>
 
 ### step 3. Clustering
 
@@ -128,6 +130,7 @@ There are two steps to add feature for clustering:
              },
         ]
 ```
+<br>
 
 ### step 2. Clustering
 
@@ -154,6 +157,8 @@ Run the following command in the current folder
 - scipy
 ```
 
+<br>
+
 ### Run Analysis.ipynb to generate the following plots
 
 Detailed instructions are included in the jupyter notebook
@@ -167,6 +172,9 @@ Detailed instructions are included in the jupyter notebook
 - Mutual information plots
 
 - Similarity matrix between clusters
+
+
+<br>
 
 ### Run Visualize.ipynb to visualize skeletons for each cluster
 

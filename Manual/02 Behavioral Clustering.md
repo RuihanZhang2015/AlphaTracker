@@ -1,6 +1,10 @@
 # Behavioral Clustering
 
-## algorithm
+## Installation for clustering
+
+See the instuction for installation for Tracking part.
+
+## Algorithm
 
 The main process of hierarchical clustering list below can be found in ./fft_main_sep_twoMiceInteract.py:
 1. Get data from tracking result with function *retrieve_poses_Mice*

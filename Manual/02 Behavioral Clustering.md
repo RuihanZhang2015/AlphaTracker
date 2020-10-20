@@ -71,8 +71,8 @@ Modify the following parameters in ```Behavioral Clustering/util_files```
 Run the following command in the current folder
 
 ```bash
-	 cd utils_file
-	  bash run_all.sh
+cd utils_file
+bash run_all.sh
 ```
 <br>
 
@@ -81,7 +81,7 @@ Run the following command in the current folder
 Run the following command in the current folder
 
 ```bash
-	python fft_main_sep_twoMiceInteract.py
+python fft_main_sep_twoMiceInteract.py
 ```
 
 <br>
@@ -113,7 +113,7 @@ There are two steps to add feature for clustering:
 2. define the weight and normalization of the new feature in ./utils_file/setting.py :
 
 ```python
-	         self.cluster_arg = [
+	   self.cluster_arg = [
            {
             'thred':30,
             'name':'all_twoMice',
@@ -137,7 +137,7 @@ There are two steps to add feature for clustering:
 Run the following command in the current folder
   
 ```bash
-	 python fft_main_sep_twoMiceInteract.py
+python fft_main_sep_twoMiceInteract.py
 ```
 
 <br>

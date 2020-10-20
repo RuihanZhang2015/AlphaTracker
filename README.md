@@ -8,7 +8,7 @@
 
 ## instructions
 
-[Multi-animal Pose Estimation and Tracking](Manual/01 Tracking.md)
+[Multi-animal Pose Estimation and Tracking](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/Manual/01%20Tracking.md)
 
 [Unsupervised Behavioral Clustering](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/Manual/02%20Behavioral%20Clustering.md)
 

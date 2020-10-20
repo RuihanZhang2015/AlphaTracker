@@ -79,12 +79,12 @@ python train.py
 
 ## Tracking
 
-### Step 1. configure
+### Step 1. Configuration
 
 Before tracking, you need to charge the parameters in ./setting.py (blue block in Figure 2). The meaning of
 the parameters can be found in the ./setting.py.
 
-### Step 2. run code
+### Step 2. Running the code
 
 Use the following command line to train the model:
 ```bash

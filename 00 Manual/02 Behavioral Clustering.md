@@ -93,7 +93,7 @@ Modify the following parameters in ```Behavioral Clustering/util_files```
   - self.video_name_suffix = # suffix for generated videos
 
 
-#### Prepare the settings (social behavior)
+#### Prepare the settings for social behavior
 
 Modify the following parameters in ```Behavioral Clustering/util_files```
 
@@ -152,13 +152,13 @@ Modify the following parameters in ```Behavioral Clustering/util_files```
         ]
   ```
 
-  - self.distance_threshold = 1.8
+- self.distance_threshold = 1.8
 
-  - self.gen_video_folder = # where the generated videos will be saved
+- self.gen_video_folder = # where the generated videos will be saved
 
-  - self.result_folder = # where the metadata will be saved
+- self.result_folder = # where the metadata will be saved
 
-  - self.video_name_suffix = # suffix for generated videos
+- self.video_name_suffix = # suffix for generated videos
 
  <br>
 
@@ -176,15 +176,17 @@ bash run_all.sh
 Run the following command in the current folder
 
 ```bash
-	python fft_main_sep_twoMiceInteract.py
+python fft_main_sep_twoMiceInteract.py
 ```
 
+<br>
 
-### How to Add Feature?
+
+### Add new features (optional)
 
 There are two steps to add feature for clustering:
 
--  step 1. Add Code for the Feature
+###  step 1. Add Code for the Feature
 
   1. define the new feature ./fft_utils.py as the following template (you can find this template in ./fft_utils.py ；
 
@@ -223,13 +225,14 @@ There are two steps to add feature for clustering:
              },
         ]
         ```
+<br>
 
-- step 2. Clustering
+### step 2. Clustering
 
-  Run the following command in the current folder
-  ```bash
-	 python fft_main_sep_twoMiceInteract.py
-  ```
+Run the following command in the current folder
+```bash
+python fft_main_sep_twoMiceInteract.py
+```
 
 <br>
 
@@ -248,6 +251,8 @@ There are two steps to add feature for clustering:
 - scipy
 ```
 
+<br>
+
 ### Run Analysis.ipynb to generate the following plots
 
 Detailed instructions are included in the jupyter notebook
@@ -261,6 +266,8 @@ Detailed instructions are included in the jupyter notebook
 - Mutual information plots
 
 - Similarity matrix between clusters
+
+<br>
 
 ### Run Visualize.ipynb to visualize skeletons for each cluster
 

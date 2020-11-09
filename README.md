@@ -1,5 +1,5 @@
 ## AlphaTracker
-<img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/Alphatracker%20Flyer.png'>
+<img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/Alphatracker%20Flyer.png' width = 800 >
 
 [AlphaTracker](https://github.com/ZexinChen/algorithm) is a multi-animal tracking and behavioral analysis tool which incorporates **multi-animal tracking**, **pose estimation** and **unsupervised behavioral clustering** to empower system neuroscience research. Alphatracker achieves the state-of-art accuracy of multi-animal tracking which lays the foundation for stringent biological studies. Moreover, the minimum requirement for hardware (regular webcams) and efficient training procedure allows readily adoption by most neuroscience labs.
 

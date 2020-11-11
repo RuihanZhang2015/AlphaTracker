@@ -90,7 +90,9 @@ In `result_folder`, enter the path for where you want to save tracking results..
 
 Save the `setting.py` file, and you should be good to go! In the image below, you will see a formatted version of the `setting.py` after adjustments have been made. 
 
-<img src="https://github.com/RuihanZhang2015/AlphaTracker/tree/master/00%20Manual/media/setting_file.PNG title="Logo">
+<p align = 'center'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/setting_file.PNG' width = 500 >
+</p>
 
 
 ### Step 8: 

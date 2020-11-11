@@ -40,12 +40,40 @@ Go into the newly created `Alphatracker` folder. Find the subfolder entitled `01
 
 In the following code block, in the variable `image_root_list`, enter the path to all your image folders...
 
-Remember, the main `My Drive` folder has the path `/content/drive/My Drive`...therefore, a folder named `Images` that is under the main `My Drive` folder would have the path `/content/drive/My Drive/Images`. This is what you should type. For example, `image_root_list = ['/content/drive/My Drive/Folder1', '/content/drive/My Drive/Folder2']` and etc...
+In the variable `json_path_list`, enter the path to all the respective JSON training files in the same order as the image folders in `image_root_list`. 
+
+In the variable `extension`, type in the filetype of the images...for example, `extension = 'jpg'` for JPG images.
+
+**Remember, the main `My Drive` folder has the path `/content/drive/My Drive`...therefore, a folder named `Images` that is under the main `My Drive` folder would have the path `/content/drive/My Drive/Images`. This is what you should type. For example, `image_root_list = ['/content/drive/My Drive/Folder1', '/content/drive/My Drive/Folder2']` and etc...**
+
+Now, navigate back to the `My Drive` folder...you will see a new folder created beginning with `TRAINING_DATA` followed by the date. This is your new training data folder that contains all the images and JSON files in the appropriate format for Colab to use...At this point, you can remove the original image folders, but not the videos, you uploaded into your Google Drive to free up some memory. 
 
 ### Step 7: 
 
 Now, find the `setting.py` file inside the `Alphatracker` directory: The file should be located in `/Alphatracker/01_Tracking/Alphatracker/setting.py`.
 
 **Open this file using the `Text Editor` and NOT Google Docs!!**
+
+Inside the `setting.py` file, you will find some variable that must be adjusted.
+
+First, find the `gpu_id` variable and set it equal to `0`. For example, `gpu_id = 0`. 
+
+Next, find the `Alphatracker_root` variable, and **copy paste the following:** `/gdrive/AlphaTracker/01_Tracking/AlphaTracker`
+
+Next, find the `image_root_list` variable...replace it with the path to your new training data folder that was created in `Step 6`. **IMPORTANT: instead of typing `/content/drive/My Drive/TRAINING_DATA...`, type the following: `/gdrive/TRAINING_DATA...`. Essentially, replace `/content/drive/My Drive` with `/gdrive` while keeping everything else the same**
+
+Next, find the `json_file_list` variable and do the same as above, but this time, linking to the JSON file inside the `TRAINING_DATA...` folder. 
+
+In `num_mouse`, type in the number of animals in the training data, like the following: `num_mouse = [2]` if there are 2 animals. 
+
+In `exp_name`, choose an experiment name and type it within the parentheses...for example, `exp_name = 'Test_Experiment'`
+
+In `num_pose`, enter the number of poses being tracked per subject...for example, `num_pose = 4`. 
+
+In `image_suffix`, type in the filetype in the parentheses, same as `Step 6`. 
+
+In `yolo_iter`, enter the number of YOLO iterations...if you are simply trying the software out, enter a small number, for example, `yolo_iter = 700`. 
+
+In `video_full_path`, enter the path to the video you are attempting to track: For example, if the video `vid1.mp4` is under the `My Drive` folder, then type: `video_full_path = '/gdrive/vid1.mp4`. 
 
 

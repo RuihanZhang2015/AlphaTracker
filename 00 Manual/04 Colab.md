@@ -29,7 +29,7 @@ Open the `AlphaTrackerCOLAB.ipynb`, which can be found at this [link here](https
 Click `Runtime` and then `Change runtime type`...from the dropdown menu, select `GPU`. 
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/runtime_pic.PNG'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/runtime_pic.png' widht = 250 height = 250>
 </p>
 
 ### Step 4: 
@@ -39,7 +39,7 @@ Now, we will connect our Python session to our Google Drive. Press the play butt
 Run the second code block...**this is an important note**: The main `My Drive` folder has the following path: `/content/drive/My Drive`. We are now inside this main folder
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_4.PNG'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_4_.PNG'>
 </p>
 
 
@@ -52,7 +52,7 @@ Run the following code block to download `Alphatracker` into your Google Drive..
 Go into the newly created `Alphatracker` folder. Find the subfolder entitled `01 Tracking`. **Rename this folder to `01_Tracking`...add an underscore between the "01" and "Tracking"**
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_5.PNG'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_5_.PNG'>
 </p>
 
 
@@ -69,7 +69,7 @@ In the variable `extension`, type in the filetype of the images...for example, `
 Now, navigate back to the `My Drive` folder...you will see a new folder created beginning with `TRAINING_DATA` followed by the date. This is your new training data folder that contains all the images and JSON files in the appropriate format for Colab to use...At this point, you can remove the original image folders, but not the videos, you uploaded into your Google Drive to free up some memory. 
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_6.PNG'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_6_.PNG'>
 </p>
 
 

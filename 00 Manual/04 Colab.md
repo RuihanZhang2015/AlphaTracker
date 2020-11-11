@@ -14,19 +14,23 @@ Find your folder/folders of data that contain the training images and the JSON a
 
 Open your Google Drive, and upload the folder/folders, and the videos you want to label, into the Drive under the main `My Drive` folder. Ensure that your Drive has ample storage after uploading the files!!
 
+
 ### Step 2: 
 
 Open the `alphatrackerCOLAB.ipynb`, which can be found at this [link here]. You have now opened your Python session
 
+
 ### Step 3:
 
 Click `Runtime` and then `Change runtime type`...from the dropdown menu, select `GPU`. 
+
 
 ### Step 4: 
 
 Now, we will connect our Python session to our Google Drive. Press the play button next to the code block to run the first cell. You will be prompted with an authorization link. Click this link and follow the instructions...select the Google Drive account to which you have uploaded your data from `Step 1`. Paste the authorization code back into the prompt box. 
 
 Run the second code block...**this is an important note**: The main `My Drive` folder has the following path: `/content/drive/My Drive`. We are now inside this main folder
+
 
 ### Step 5:
 
@@ -35,6 +39,7 @@ Run the following code block to download `Alphatracker` into your Google Drive..
 #### **THIS FOLLOWING IS CRUCIAL:**
 
 Go into the newly created `Alphatracker` folder. Find the subfolder entitled `01 Tracking`. **Rename this folder to `01_Tracking`...add an underscore between the "01" and "Tracking"**
+
 
 ### Step 6:
 
@@ -47,6 +52,7 @@ In the variable `extension`, type in the filetype of the images...for example, `
 **Remember, the main `My Drive` folder has the path `/content/drive/My Drive`...therefore, a folder named `Images` that is under the main `My Drive` folder would have the path `/content/drive/My Drive/Images`. This is what you should type. For example, `image_root_list = ['/content/drive/My Drive/Folder1', '/content/drive/My Drive/Folder2']` and etc...**
 
 Now, navigate back to the `My Drive` folder...you will see a new folder created beginning with `TRAINING_DATA` followed by the date. This is your new training data folder that contains all the images and JSON files in the appropriate format for Colab to use...At this point, you can remove the original image folders, but not the videos, you uploaded into your Google Drive to free up some memory. 
+
 
 ### Step 7: 
 
@@ -76,4 +82,22 @@ In `yolo_iter`, enter the number of YOLO iterations...if you are simply trying t
 
 In `video_full_path`, enter the path to the video you are attempting to track: For example, if the video `vid1.mp4` is under the `My Drive` folder, then type: `video_full_path = '/gdrive/vid1.mp4`. 
 
+In `result_folder`, enter the path for where you want to save tracking results...this will create a folder with the results...for example: `result_folder = /gdrive/tracking_results`. 
+
+Save the `setting.py` file, and you should be good to go! In the image below, you will see a formatted version of the `setting.py` after adjustments have been made. 
+
+
+### Step 8: 
+
+Run the following code blocks back-to-back without any alterations...this will take about 6-10 minutes to complete!
+
+
+### Step 9:
+
+Run the following code block to train Alphatracker! This step can take anywhere from 30 minutes to 6 hours...it depends on how many iterations you are training for.
+
+
+### Step 10:
+
+Run the following code block to perform tracking on the videos you listed in `setting.py`. Once this step is complete, you can go to the folder you designated in the `result_folder` variable in `setting.py` to find the location of the tracked results!
 

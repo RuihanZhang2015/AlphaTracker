@@ -8,6 +8,8 @@ AlphaTracker is tested in Linux systems broadly and those systems that have GPUs
 
 Google Colab is only useful for training and inference purposes. If you have a fully-labeled set of data using the Alphatracker annotation tool, continue on...if you have NOT labeled your data, **please complete this step first!**
 
+Also, if you are trying out Alphatracker and would like to use the sample data, click [here](https://drive.google.com/drive/folders/1Dk6e7sJ-dtT3L26r2Tw2QeiQSkn1DAfs?usp=sharing) to download this data. 
+
 ### Step 1:
 
 Find your folder/folders of data that contain the training images and the JSON annotated files. 
@@ -17,7 +19,7 @@ Open your Google Drive, and upload the folder/folders, and the videos you want t
 
 ### Step 2: 
 
-Open the `alphatrackerCOLAB.ipynb`, which can be found at this [link here](https://drive.google.com/file/d/1vzZK-2oVyz1ALUvvdkp6tTMTvVYrM0pn/view?usp=sharing). You have now opened your Python session
+Open the `AlphaTrackerCOLAB.ipynb`, which can be found at this [link here](https://drive.google.com/file/d/1vzZK-2oVyz1ALUvvdkp6tTMTvVYrM0pn/view?usp=sharing). You have now opened your Python session
 
 
 ### Step 3:

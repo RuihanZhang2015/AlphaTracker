@@ -12,12 +12,15 @@ Also, if you are trying out Alphatracker and would like to use the sample data, 
 
 To access the Colab notebook, **click [here](https://colab.research.google.com/drive/1MVyZE73jzOI7bILU9vQttOpU3abK4daa?usp=sharing)**
 
+<br>
+
 ## Step 1:
 
 Find your folder/folders of data that contain the training images and the JSON annotated files. 
 
 Open your Google Drive, and upload the folder/folders, and the videos you want to label, into the Drive under the main `My Drive` folder. Ensure that your Drive has ample storage after uploading the files!!
 
+<br>
 
 ## Step 2: 
 

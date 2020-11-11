@@ -125,7 +125,7 @@ Save the `setting.py` file, and you should be good to go! In the image below, yo
 Run the following code blocks back-to-back without any alterations...this will take about 6-10 minutes to complete!
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_8_.png' width = 500  height = 800>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_8_.png'>
 </p>
 
 <br>
@@ -135,7 +135,7 @@ Run the following code blocks back-to-back without any alterations...this will t
 Run the following code block to train Alphatracker! This step can take anywhere from 30 minutes to 6 hours...it depends on how many iterations you are training for.
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_9_.png' width = 500  height = 800>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_9_.png'>
 </p>
 
 <br>
@@ -145,5 +145,5 @@ Run the following code block to train Alphatracker! This step can take anywhere 
 Run the following code block to perform tracking on the videos you listed in `setting.py`. Once this step is complete, you can go to the folder you designated in the `result_folder` variable in `setting.py` to find the location of the tracked results!
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_10_.png' width = 500  height = 800>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_10_.png'>
 </p>

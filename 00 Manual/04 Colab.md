@@ -89,6 +89,7 @@ In `video_full_path`, enter the path to the video you are attempting to track: F
 In `result_folder`, enter the path for where you want to save tracking results...this will create a folder with the results...for example: `result_folder = /gdrive/tracking_results`. 
 
 Save the `setting.py` file, and you should be good to go! In the image below, you will see a formatted version of the `setting.py` after adjustments have been made. 
+![image_file](./media/setting_file.PNG)
 
 
 ### Step 8: 

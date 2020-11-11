@@ -17,7 +17,7 @@ Open your Google Drive, and upload the folder/folders, and the videos you want t
 
 ### Step 2: 
 
-Open the `alphatrackerCOLAB.ipynb`, which can be found at this [link here]. You have now opened your Python session
+Open the `alphatrackerCOLAB.ipynb`, which can be found at this [link here](https://drive.google.com/file/d/1vzZK-2oVyz1ALUvvdkp6tTMTvVYrM0pn/view?usp=sharing). You have now opened your Python session
 
 
 ### Step 3:

@@ -18,6 +18,8 @@
 
 [Tracking UI and Clustering UI](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/03%20UI.md)
 
+[Use on Google Colab](https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/04%20Colab.md)
+
 
 <br>
 

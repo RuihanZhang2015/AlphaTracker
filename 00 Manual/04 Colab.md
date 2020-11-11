@@ -26,6 +26,7 @@ Open your Google Drive, and upload the folder/folders, and the videos you want t
 
 Open the `AlphaTrackerCOLAB.ipynb`, which can be found at this [link here](https://colab.research.google.com/drive/1MVyZE73jzOI7bILU9vQttOpU3abK4daa?usp=sharing). You have now opened your Python session
 
+<br>
 
 ## Step 3:
 
@@ -34,6 +35,8 @@ Click `Runtime` and then `Change runtime type`...from the dropdown menu, select 
 <p align = 'center'>
     <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/runtime_pic.png' widht = 250 height = 250>
 </p>
+
+<br>
 
 ### Step 4: 
 
@@ -45,6 +48,7 @@ Run the second code block...**this is an important note**: The main `My Drive` f
     <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_4_.png'>
 </p>
 
+<br>
 
 ### Step 5:
 
@@ -58,6 +62,7 @@ Go into the newly created `Alphatracker` folder. Find the subfolder entitled `01
     <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_5_.png'>
 </p>
 
+<br>
 
 ## Step 6:
 
@@ -75,7 +80,7 @@ Now, navigate back to the `My Drive` folder...you will see a new folder created 
     <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_6_.png' >
 </p>
 
-
+<br>
 
 ## Step 7: 
 
@@ -113,16 +118,19 @@ Save the `setting.py` file, and you should be good to go! In the image below, yo
     <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/setting_file.PNG' width = 500  height = 800>
 </p>
 
+<br>
 
 ## Step 8: 
 
 Run the following code blocks back-to-back without any alterations...this will take about 6-10 minutes to complete!
 
+<br>
 
 ## Step 9:
 
 Run the following code block to train Alphatracker! This step can take anywhere from 30 minutes to 6 hours...it depends on how many iterations you are training for.
 
+<br>
 
 ## Step 10:
 

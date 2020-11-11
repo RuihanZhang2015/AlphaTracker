@@ -1,6 +1,6 @@
 # 04 Training and Tracking with Colab
 
-## Introduction
+# Introduction
 
 AlphaTracker is tested in Linux systems broadly and those systems that have GPUs. However, if you would do not have Linux-compatible system or do not have access to consumer GPUs, you can use Google Colab for the purposes of training and tracking Alphatracker!
 
@@ -12,28 +12,35 @@ Also, if you are trying out Alphatracker and would like to use the sample data, 
 
 To access the Colab notebook, **click [here](https://colab.research.google.com/drive/1MVyZE73jzOI7bILU9vQttOpU3abK4daa?usp=sharing)**
 
-### Step 1:
+## Step 1:
 
 Find your folder/folders of data that contain the training images and the JSON annotated files. 
 
 Open your Google Drive, and upload the folder/folders, and the videos you want to label, into the Drive under the main `My Drive` folder. Ensure that your Drive has ample storage after uploading the files!!
 
 
-### Step 2: 
+## Step 2: 
 
 Open the `AlphaTrackerCOLAB.ipynb`, which can be found at this [link here](https://colab.research.google.com/drive/1MVyZE73jzOI7bILU9vQttOpU3abK4daa?usp=sharing). You have now opened your Python session
 
 
-### Step 3:
+## Step 3:
 
 Click `Runtime` and then `Change runtime type`...from the dropdown menu, select `GPU`. 
 
+<p align = 'center'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/runtime_pic.PNG'>
+</p>
 
 ### Step 4: 
 
 Now, we will connect our Python session to our Google Drive. Press the play button next to the code block to run the first cell. You will be prompted with an authorization link. Click this link and follow the instructions...select the Google Drive account to which you have uploaded your data from `Step 1`. Paste the authorization code back into the prompt box. 
 
 Run the second code block...**this is an important note**: The main `My Drive` folder has the following path: `/content/drive/My Drive`. We are now inside this main folder
+
+<p align = 'center'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_4.PNG'>
+</p>
 
 
 ### Step 5:
@@ -44,8 +51,12 @@ Run the following code block to download `Alphatracker` into your Google Drive..
 
 Go into the newly created `Alphatracker` folder. Find the subfolder entitled `01 Tracking`. **Rename this folder to `01_Tracking`...add an underscore between the "01" and "Tracking"**
 
+<p align = 'center'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_5.PNG'>
+</p>
 
-### Step 6:
+
+## Step 6:
 
 In the following code block, in the variable `image_root_list`, enter the path to all your image folders...
 
@@ -57,8 +68,13 @@ In the variable `extension`, type in the filetype of the images...for example, `
 
 Now, navigate back to the `My Drive` folder...you will see a new folder created beginning with `TRAINING_DATA` followed by the date. This is your new training data folder that contains all the images and JSON files in the appropriate format for Colab to use...At this point, you can remove the original image folders, but not the videos, you uploaded into your Google Drive to free up some memory. 
 
+<p align = 'center'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_6.PNG'>
+</p>
 
-### Step 7: 
+
+
+## Step 7: 
 
 Now, find the `setting.py` file inside the `Alphatracker` directory: The file should be located in `/Alphatracker/01_Tracking/Alphatracker/setting.py`.
 
@@ -95,17 +111,17 @@ Save the `setting.py` file, and you should be good to go! In the image below, yo
 </p>
 
 
-### Step 8: 
+## Step 8: 
 
 Run the following code blocks back-to-back without any alterations...this will take about 6-10 minutes to complete!
 
 
-### Step 9:
+## Step 9:
 
 Run the following code block to train Alphatracker! This step can take anywhere from 30 minutes to 6 hours...it depends on how many iterations you are training for.
 
 
-### Step 10:
+## Step 10:
 
 Run the following code block to perform tracking on the videos you listed in `setting.py`. Once this step is complete, you can go to the folder you designated in the `result_folder` variable in `setting.py` to find the location of the tracked results!
 

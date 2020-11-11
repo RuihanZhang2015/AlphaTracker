@@ -69,7 +69,7 @@ In the variable `extension`, type in the filetype of the images...for example, `
 Now, navigate back to the `My Drive` folder...you will see a new folder created beginning with `TRAINING_DATA` followed by the date. This is your new training data folder that contains all the images and JSON files in the appropriate format for Colab to use...At this point, you can remove the original image folders, but not the videos, you uploaded into your Google Drive to free up some memory. 
 
 <p align = 'center'>
-    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_6_.png'>
+    <img src = 'https://github.com/RuihanZhang2015/AlphaTracker/blob/master/00%20Manual/media/step_6_.png' width = 300 height = 150>
 </p>
 
 
